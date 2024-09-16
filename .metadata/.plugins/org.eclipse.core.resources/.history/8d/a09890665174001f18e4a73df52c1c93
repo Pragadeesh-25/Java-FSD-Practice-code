@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class Collection5 {
+
+	public int secondSmallest(int[] arr)
+	{
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        for(int i:arr)
+        {
+        	arrayList.add(arr[i]);
+        }
+        Collections.sort(arrayList);
+        return arrayList.get(1);
+		
+	}
+	public static void main(String[] args) {
+		int n=0;
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		int arr[]=new int[n];
+		for(int i=0;i<n;i++)
+			arr[i]=sc.nextInt();
+		Collection5 obj=new Collection5();
+		int ss=obj.secondSmallest(arr);
+		System.out.println("Second smallest"+ss);
+		
+			
+		
+	}
+}

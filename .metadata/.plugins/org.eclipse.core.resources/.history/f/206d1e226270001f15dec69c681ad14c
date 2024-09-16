@@ -1,0 +1,17 @@
+package pack;
+
+public class Book extends WrittenItem{
+
+	public Book(int uid, String name, int noc) {
+		super(uid, name, noc);
+		// TODO Auto-generated constructor stub
+	}
+	public void checkIn() {
+		setNoc(getNoc()+1);
+	}
+	
+	public void checkOut() {
+		setNoc(getNoc()-1);
+	}
+
+}

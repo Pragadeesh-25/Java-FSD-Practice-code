@@ -1,0 +1,33 @@
+package service;
+import bean.Employee;
+interface servicei
+{
+	void getdetails(int id,String name, int salary, String designation, String insScheme);
+	void insScheme(int salary, String designation);
+	void printdetails();
+}
+public class Service implements servicei {
+	Employee e=new Employee();
+	public void getdetails(int id,String name, int salary, String designation, String insScheme)
+	{
+		e.name=name;
+		e.salary=salary;
+		e.designation=designation;
+		e.id=id;
+		
+	}
+	public void insScheme(int salary, String designation)
+	{
+		if((salary>30000)&&(designation=="trainee"))
+			e.insScheme="basic";
+		else if((salary>50000)&&(designation=="senior"))
+			e.insScheme="standard";
+
+		
+	}
+	public void printdetails()
+	{
+	System.out.println(e);	
+	}
+	
+}

@@ -1,0 +1,26 @@
+package com;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		boolean str= "hello".contentEquals("hello");
+		System.out.print("Boolean"+str);
+iTest it=new Testclass();
+it.aa();
+it.bb();
+iTest.cc();
+
+Testclass tt=new Testclass(); //Make it abstract, have unique method in abstract, try to call it using this object
+tt.bb();
+tt.cc();
+Testclass.cc();
+
+Hello2 hh=new Hello3();
+hh.x();
+hh.y();
+hh.z();
+	}
+
+}

@@ -1,0 +1,18 @@
+package bank;
+
+public abstract class SBAccount extends Account{
+
+	double interestRate;
+	double amount;
+	String type;
+	 double calculateInterest()
+	 {
+		 if(this.type.equals("Normal"))
+			 interestRate=4;
+		 if(this.type.equals("NRI"))
+			 interestRate=6;
+		 return (amount*(1+interestRate));
+		 
+			 
+	 }
+}

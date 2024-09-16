@@ -1,0 +1,9 @@
+package com;
+
+public class classB {
+classB()
+{
+	System.out.print("Class B");
+
+}
+}

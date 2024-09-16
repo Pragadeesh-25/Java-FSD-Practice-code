@@ -1,0 +1,21 @@
+package com;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+iTest it=new Testclass();
+it.aa();
+it.bb();
+iTest.cc();
+
+Testclass tt=new Testclass();
+tt.bb();
+tt.cc();
+Testclass.cc();
+
+Hello2 hh=new Hello3();
+hh.x();
+	}
+
+}

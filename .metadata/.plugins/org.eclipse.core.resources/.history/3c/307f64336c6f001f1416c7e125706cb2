@@ -1,0 +1,32 @@
+
+public class Account extends Person{
+	long accNum;
+	double balance;
+	Person accHolder=null;
+	public void deposit(double amt)
+	{
+		
+	}
+	public void withdraw(double amt)
+	{
+		
+	}
+	public double getBalance()
+	{return balance;}
+	
+	public void setaccNum(long accNum)
+	{
+		this.accNum=accNum;
+	}
+	public void setBalance(double balance)
+	{
+		this.balance=balance;
+	}
+	public long getaccNum()
+	{
+		return accNum;
+	}
+	
+
+
+}

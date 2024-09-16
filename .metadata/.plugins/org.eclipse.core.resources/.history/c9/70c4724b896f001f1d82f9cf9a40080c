@@ -1,0 +1,25 @@
+package service;
+import bean.Employee;
+interface servicei
+{
+	void getdetails(int id,String name, int salary, String designation, String insScheme);
+	void insScheme(int salary, String designation);
+	void printdetails();
+}
+public class Service implements servicei {
+	Employee e=new Employee();
+	public void getdetails(int id,String name, int salary, String designation, String insScheme)
+	{
+		e.id=id;
+		
+	}
+	public void insScheme(int salary, String designation)
+	{
+		
+	}
+	public void printdetails()
+	{
+		
+	}
+	
+}

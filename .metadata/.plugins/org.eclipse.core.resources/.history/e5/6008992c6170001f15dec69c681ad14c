@@ -1,0 +1,25 @@
+package pack;
+
+public abstract class WrittenItem extends Item{
+	private int authorName;
+	
+
+	public int getAuthorName() {
+		return authorName;
+	}
+
+
+	public void setAuthorName(int authorName) {
+		this.authorName = authorName;
+	}
+
+
+
+	public WrittenItem(int uid, String name, int noc) {
+		super(uid, name, noc);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

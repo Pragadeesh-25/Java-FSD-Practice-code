@@ -1,0 +1,15 @@
+
+public class Savingsacc extends Account{
+	
+	final double minBal=500;
+	public void withdraw(double amt)
+	{
+		if(balance>500)
+		{
+			balance-=amt;
+		}
+			
+	}
+
+
+}

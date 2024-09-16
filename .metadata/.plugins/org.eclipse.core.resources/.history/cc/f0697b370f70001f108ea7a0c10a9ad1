@@ -1,0 +1,8 @@
+package com;
+
+public class Hello2 {
+public void x()
+{
+	System.out.println("x method- hello2 class");
+}
+}

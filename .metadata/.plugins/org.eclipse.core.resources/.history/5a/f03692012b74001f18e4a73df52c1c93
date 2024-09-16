@@ -1,0 +1,10 @@
+interface example
+{
+	public double find(int x,int y);
+}
+public class Prob2 {
+public static void main(String[] args) {
+	example example=(x,y)->(Math.pow((double)x, (double)y));
+	System.out.println("Result "+example.find(10, 2));
+}
+}

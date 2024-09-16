@@ -1,0 +1,7 @@
+package pack;
+
+public abstract class Item {
+int uid;
+String name;
+int noc;
+}

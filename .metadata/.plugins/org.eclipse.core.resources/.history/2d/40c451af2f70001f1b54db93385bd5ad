@@ -1,0 +1,10 @@
+package pack;
+
+public abstract class WrittenItem extends Item{
+
+	public WrittenItem(int uid, String name, int noc) {
+		super(uid, name, noc);
+		// TODO Auto-generated constructor stub
+	}
+
+}

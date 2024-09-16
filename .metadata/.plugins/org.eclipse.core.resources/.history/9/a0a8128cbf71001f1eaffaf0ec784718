@@ -1,0 +1,28 @@
+package practice;
+
+import java.util.*;
+import java.util.HashSet;
+import java.util.Iterator;
+public class Prob4 {
+	
+public static void main(String[] args) {
+	HashSet<Object> hSet=new HashSet<>(5);
+	String str1=new String("Hello");
+	String str2=new String("World");
+	MyOwnClass ob1=new MyOwnClass(44,"abc");
+	MyOwnClass ob2=new MyOwnClass(15, "def");
+	int b=9;
+	int c=10;
+	hSet.add(str1);
+	hSet.add(str2);
+	hSet.add(ob1);
+	hSet.add(b);
+	hSet.add(c);
+	Iterator<Object> itr=hSet.iterator();
+	while(itr.hasNext())
+	{
+		System.out.print(itr.next()+" ");
+	}
+	
+}
+}

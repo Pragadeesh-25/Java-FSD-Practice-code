@@ -1,0 +1,19 @@
+package hello;
+
+import java.util.Scanner;
+
+public class ex7 {
+boolean checkNumber(int n)
+{
+	int 
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the n");
+		n=sc.nextInt();
+		ex7 obj=new ex7();
+	}
+
+}

@@ -1,0 +1,36 @@
+package fileQ;
+import java.io.*;
+public class Question1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File obj=new File("C:\\Users\\pragadeesh.b\\Documents\\workspace-spring-tool-suite-4-4.10.0.RELEASE\\Day4\\src\\file1.text1");
+		FileReader fr = null;
+		try {
+			fr = new FileReader(obj);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		BufferedReader br=new BufferedReader(fr);
+		String i = null;
+		try {
+			i = br.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		while(i!=null)
+			{System.out.println(i);
+			try {
+				i = br.readLine();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			}
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package practice;
+
+import java.util.*;
+import java.util.LinkedHashSet;
+import java.util.Iterator;
+public class Prob2 {
+public static void main(String args[])
+{
+	LinkedHashSet<String> s= new LinkedHashSet<String>();
+	s.add("Abc");
+	s.add("cde");
+	s.add("efg");
+	s.add("ghi");
+	Iterator<String> iterator= s.iterator();
+	while(iterator.hasNext())
+	{
+		System.out.print(iterator.next()+" ");
+	}
+	
+	
+	
+}
+}

@@ -1,0 +1,76 @@
+package bank;
+
+public class RDaccount extends Account{
+	int noOfMonths;
+	double monthlyAmount;
+	String ageOfACHolder;
+
+	public RDaccount(int noOfMonths, double monthlyAmount, String ageOfACHolder) throws Userdef {
+		 super(monthlyAmount * noOfMonths);
+		 if (noOfMonths <= 0) {
+	            throw new Userdef("Invalid input for noOfMonths. Please enter correct values.");
+	        }
+		 if (monthlyAmount <= 0) {
+	            throw new Userdef("Invalid input for monthlyAmount. Please enter correct values.");
+	        }
+		 if (!ageOfACHolder.equals("Senior")||!ageOfACHolder.equals("General")) {
+	            throw new Userdef("Invalid input ageOfACHolder. Please enter correct values.");
+	        }
+
+		this.noOfMonths = noOfMonths;
+		this.monthlyAmount = monthlyAmount;
+		this.ageOfACHolder = ageOfACHolder;
+	}
+
+	//double interestRate
+	
+	 double calculateInterest()
+	 {
+		if(this.ageOfACHolder.equals("General")) 
+		 {
+			 if(noOfMonths==6)
+				 interestRate=7.5f;
+			 if(noOfMonths==9)
+				 interestRate=7.75f;
+			 if(noOfMonths==12)
+				 interestRate=8.0f;
+			 if(noOfMonths==15)
+				 interestRate=8.25f;
+			 if(noOfMonths==18)
+				 interestRate=8.5f;
+			 if(noOfMonths==21)
+				 interestRate=8.75f;
+			 
+			 
+				 
+		 }
+		
+		else if(this.ageOfACHolder.equals("Senior")) 
+		 {
+			 if(noOfMonths==6)
+				 interestRate=8.0f;
+			 if(noOfMonths==9)
+				 interestRate=8.25f;
+			 if(noOfMonths==12)
+				 interestRate=8.5f;
+			 if(noOfMonths==15)
+				 interestRate=8.75f;
+			 if(noOfMonths==18)
+				 interestRate=9.0f;
+			 if(noOfMonths==21)
+				 interestRate=9.25f;
+			 
+			 
+				 
+		 }
+		double monthlyRate = interestRate / (12 * 100); 
+        int n = noOfMonths;
+
+        double maturityAmount = monthlyAmount * (Math.pow(1 + monthlyRate, n) - 1) / (1 - Math.pow(1 + monthlyRate, -1));
+
+        double totalDeposits = monthlyAmount * n;
+        double interestEarned = maturityAmount - totalDeposits;
+
+        return interestEarned;
+	 }
+}

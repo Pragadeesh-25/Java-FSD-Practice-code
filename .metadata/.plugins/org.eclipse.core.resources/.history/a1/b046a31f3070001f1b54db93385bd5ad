@@ -1,0 +1,13 @@
+package pack;
+
+public abstract class WrittenItem extends Item{
+	private int authorName;
+	private int noBookspub;
+	
+
+	public WrittenItem(int uid, String name, int noc) {
+		super(uid, name, noc);
+		// TODO Auto-generated constructor stub
+	}
+
+}

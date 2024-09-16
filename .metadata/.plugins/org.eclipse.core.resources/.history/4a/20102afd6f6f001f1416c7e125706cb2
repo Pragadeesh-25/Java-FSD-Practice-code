@@ -1,0 +1,34 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person p=new Person();
+		p.setName("smith");
+		p.setAge(50);
+		
+		Account a=new Account();
+		a.setaccHolder(p);
+		a.setBalance(2000);
+		a.deposit(2000);
+		System.out.println("Balance:"+a.getBalance());
+		
+		
+		Person p1=new Person();
+		p1.setName("katty");
+		p1.setAge(30);
+		
+		Account a1=new Account();
+		a1.setaccHolder(p1);
+		a1.setBalance(3000);
+		a1.withdraw(2000);
+		System.out.println("Balance:"+a1.getBalance());
+
+		
+		
+		
+		
+
+	}
+
+}

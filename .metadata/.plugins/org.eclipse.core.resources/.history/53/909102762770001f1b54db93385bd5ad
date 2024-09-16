@@ -1,0 +1,24 @@
+package com;
+abstract class abs{
+	abstract public int method1();
+	public int method2()
+	{
+		int i=99;
+		return i;
+	}
+}
+public class Hello1  {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+boolean str= "hello".contentEquals("Helloo");
+System.out.print("Boolean"+str);
+		abs obj=new abs() {
+			public int method1() {
+				return 5;
+			}
+	};
+
+}
+}
+

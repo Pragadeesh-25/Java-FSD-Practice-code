@@ -1,0 +1,13 @@
+package practice;
+
+public class MyOwnClass {
+int age;
+int name;
+public MyOwnClass(int age, int name) {
+	super();
+	this.age = age;
+	this.name = name;
+}
+
+
+}

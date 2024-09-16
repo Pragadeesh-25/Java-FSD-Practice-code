@@ -1,0 +1,10 @@
+package pack;
+
+public abstract class Item {
+	public Item() {}
+		
+	
+int uid;
+String name;
+int noc;
+}

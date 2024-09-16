@@ -1,0 +1,14 @@
+package bank;
+
+public abstract class Account {
+	double interestRate;
+	double amount;
+	 public Account(double amount) {
+	        if (amount < 0) {
+	            throw new IllegalArgumentException("Invalid amount. Please enter a positive value.");
+	        }
+	        this.amount = amount;
+	    }
+    
+	abstract double calculateInterest();
+}

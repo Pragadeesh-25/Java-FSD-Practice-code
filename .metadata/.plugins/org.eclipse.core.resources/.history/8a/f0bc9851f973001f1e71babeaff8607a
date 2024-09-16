@@ -1,0 +1,47 @@
+package Service;
+import java.util.*;
+import practice.*;
+
+public class UserService {
+
+	public boolean validateUser(String user,String password) {
+		if(UserRepo.getUsers().containsKey(user))
+		{
+			if(UserRepo.getUsers().get(user).equals(password))
+			{
+				return true;
+			}
+			else 
+			{
+				return false;
+			}
+		}
+		else
+		return false;
+		
+	}
+	public void addUser(String name, String pass)
+	{
+		if(UserRepo.getUsers().containsKey(name))
+		{
+			UserRepo.getUsers().put(name, pass);
+			System.out.println("User added succesfully");
+		}
+		else
+		{
+			System.out.println("Existing user name");
+
+		}
+		
+	}
+	public void display()
+	{
+		Set set=UserRepo.getUsers().entrySet();
+		Iterator itr=set.iterator();
+		while(itr.hasNext())
+		{
+			Map.Entry entry=(Map.Entry)itr.next();
+			System.out.println("User: "+entry.getKey()+"Password: "+entry.getValue());
+		}
+	}
+}

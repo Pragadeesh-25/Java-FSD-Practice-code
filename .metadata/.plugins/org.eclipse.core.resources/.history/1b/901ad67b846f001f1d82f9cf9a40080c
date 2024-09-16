@@ -1,0 +1,18 @@
+
+public class Currentacc extends Account{
+
+	int overdraftLimit=3000;
+	public void withdraw(double amt)
+	{
+		
+		if(amt>overdraftLimit)
+		{
+			System.out.print("Limit exceeded, can't withdraw");;
+		}
+		else
+			super.setBalance(super.getBalance()-amt);
+
+			
+	}
+	
+}

@@ -1,0 +1,34 @@
+package pack;
+
+public abstract class Item {
+private int uid;
+private String name;
+private int noc;
+public Item(int uid, String name, int noc) {
+	this.uid = uid;
+	this.name = name;
+	this.noc = noc;
+}
+public int getUid() {
+	return uid;
+}
+public void setUid(int uid) {
+	this.uid = uid;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public int getNoc() {
+	return noc;
+}
+public void setNoc(int noc) {
+	this.noc = noc;
+}
+@Override
+public String toString() {
+	return "Item [uid=" + uid + ", name=" + name + ", noc=" + noc + "]";
+}
+}

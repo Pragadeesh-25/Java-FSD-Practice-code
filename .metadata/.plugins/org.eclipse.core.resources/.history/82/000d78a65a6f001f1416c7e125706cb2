@@ -1,0 +1,13 @@
+package com;
+
+public class classA {
+classA(int a)
+{
+	/*classA()
+	{
+		System.out.println("Class A");
+
+	}*/
+	System.out.println("Class A"+a);
+}
+}

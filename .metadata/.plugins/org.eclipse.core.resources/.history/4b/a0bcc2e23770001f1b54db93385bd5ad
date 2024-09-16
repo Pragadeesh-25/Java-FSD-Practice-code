@@ -1,0 +1,12 @@
+package pack;
+
+public class Journalpaper extends WrittenItem {
+
+	private String yop;
+	
+	public Journalpaper(int uid, String name, int noc) {
+		super(uid, name, noc);
+		// TODO Auto-generated constructor stub
+	}
+
+}

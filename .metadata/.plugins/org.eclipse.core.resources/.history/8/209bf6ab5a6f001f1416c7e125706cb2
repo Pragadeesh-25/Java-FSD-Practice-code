@@ -1,0 +1,12 @@
+package com;
+
+public class classC extends classA{
+	classC()
+	{
+		super(5);
+		classB b=new classB(6);
+
+	}
+
+
+}

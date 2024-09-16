@@ -1,0 +1,15 @@
+package bean;
+
+public class Employee {
+	 public int id;
+	 public String name;
+	 public int salary; 
+	 public String designation;
+	 public String insScheme;
+
+	public static void main(String[] args) {
+		 
+
+	}
+
+}
